@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cahier des charges</title>
+  </head>
+  <body>
+    <form action="/traitement" method="POST" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Identité et Sécurité</legend>
+        <input type="hidden" name="source" value="inscription_web" />
+        <label for="prenom">Prenom:</label>
+        <input type="text" id="prenom" name="prenom" required autofocus /><br />
+        <label for="nom">Nom:</label>
+        <input
+          type="text"
+          id="nom"
+          name="nom"
+          required
+          placeholder="DUPONT"
+        /><br />
+        <label for="mot-de-passe">Mot de passe:</label>
+        <input
+          type="password"
+          id="mot-de-passe"
+          name="mot-de-passe"
+          required
+          minlength="8"
+        /><br />
+        <label for="photo">Photo de profil:</label>
+        <input type="file" id="photo" name="photo" accept=".png, .jpg" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Contact et Profil</legend>
+      </fieldset>
+    </form>
+  </body>
+</html>
