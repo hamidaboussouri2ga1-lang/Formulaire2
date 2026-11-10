@@ -33,6 +33,76 @@
       </fieldset>
       <fieldset>
         <legend>Contact et Profil</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
+        <label for="telephone">Téléphone:</label>
+        <input
+          type="tel"
+          id="telephone"
+          name="telephone"
+          required
+          pattern="[0-9]{10}"
+        /><br />
+        <label for="url">Site Web:</label>
+        <input type="url" id="url" name="URL" /><br />
+        <label for="color">Couleur du thème:</label>
+        <input type="color" id="color" name="color" value="3498db" /><br />
+      </fieldset>
+      <br>
+        <legend>Informations professionnelles</legend>
+        <label for="Experience">Années d'experience:</label>
+        <input
+          type="number"
+          id="Experience"
+          name="Experience"
+          min="0"
+          max="50"
+        /><br />
+        <label for="tjn">Taux Journaliers Moyen:</label>
+        <input type="range" id="tjm" name="tjm" min="0" step="50" /><br />
+        <label for="seniorite">Niveau de seniorité estimé:</label>
+        <input
+          type="range"
+          id="seniorite"
+          name="seniorite"
+          min="1"
+          max="5"
+        /><br />
+        <p>Langages maitrisés:</p>
+        <input
+          type="checkbox"
+          id="html"
+          name="langages[]"
+          value="HTML"
+          checked
+        />
+        <label for="HTML">HTML</label><br />
+        <input type="checkbox" id="css" name="langages[]" value="CSS" />
+        <label for="CSS">CSS</label><br />
+        <input type="checkbox" id="js" name="langages[]" value="JavaScript" />
+        <label for="JavaScript">JavaScript</label><br />
+        <input type="checkbox" id="php" name="langages[]" value="PHP" />
+        <label for="PHP">PHP </label><br />
+        <p>Statut Juridique:</p>
+        <input type="radio" id="auto" name="statut" value="auto-entrepreneur" />
+        <label for="auto">Auto-entrepreneur</label>
+        <input type="radio" id="sasu" name="statut" value="sasu" />
+        <label for="sasu">SASU </label>
+        <input type="radio" id="eurl" name="statut" value="eurl" />
+        <label for="eurl">EURL </label></br>
+        <label for="region">Région d'intervention:</label>
+        <select id="region" name="region">
+          <optgroup label="Groupe Nord">
+            <option value="Hauts-de-France">Hauts-de-France</option>
+            <option value="Normandie">Normandie</option>
+            <option value="ile-de-france">Île-de-France</option>
+          </optgroup>
+          <optgroup label="Groupe Sud">
+            <option value="Occitanie">Occitanie</option>
+            <option value="paca">Provence-Alpes-Côte d'Azur</option>
+            <option value="Nouvelle-Aquitaine">Nouvelle-Aquitaine</option>
+          </optgroup>
+        </select>
       </fieldset>
     </form>
   </body>
