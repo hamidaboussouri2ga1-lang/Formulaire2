@@ -104,6 +104,23 @@
           </optgroup>
         </select>
       </fieldset>
+      <br>
+        <legend>Disponibilités et Finalisation</legend>
+        <label for="disponibilites">Date de Disponibilités:</label>
+        <input type="date" id="disponibilites" name="disponibilites" required /><br />
+        <label for="audit">Dernier audit technique:</label>
+        <input type="text" id="audit" name="audit" value="Non réalisé" readonly /><br />
+        <label for="motivation">motivation:</label><br />
+        <textarea
+          id="motivation"
+          name="motivation"
+          rows="8"
+          maxlength="500"></textarea></br>
+      <input type="checkbox" id="cgu" name="cgu" required />
+      <label for="cgu">J'accepte les conditions d'utilisation</label><br />
+      <button type="submit">Envoyer</button>
+      <button type="reset">Tout effacer</button>
+      </fieldset>
     </form>
   </body>
 </html>
